@@ -52,7 +52,7 @@ export default function Product({ product }: ProductProps) {
     return <div>Loading...</div>
   }
 
-  return (
+  return (      
     <>
       <Head>
         <title>{product.name} | Ignite Shop</title>
@@ -65,7 +65,7 @@ export default function Product({ product }: ProductProps) {
         <h1>{product.name}</h1>
         <span>{product.price}</span>
         <p>{product.description}</p>
-        <button disabled={isCreatingCheckoutSession} onClick={handleBuyProduct}>Comprar</button>
+        <button disabled={isCreatingCheckoutSession} onClick={handleBuyProduct}>Colocar na sacola</button>
       </ProductDetails>
    </ProductContainer> 
     </>

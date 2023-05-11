@@ -2,7 +2,6 @@ import { styled } from "..";
 
 export const HomeContainer = styled("main", {
   display: "flex",
-  // gap: "3rem",
   width: "100%",
   maxWidth: "calc(100vw - ((100vw - 1180px)/2))",
   marginLeft: "auto",
@@ -13,7 +12,7 @@ export const Product = styled("div", {
   background: "linear-gradient(180deg, #1ea483 0%, #7465d4 100%)",
   borderRadius: "8px",
   // padding: "0.25rem",
-  cursor: "pointer",
+  cursor: "default",
   position: "relative",
   overflow: "hidden",
 
@@ -34,7 +33,6 @@ export const Product = styled("div", {
 
     borderRadius: "6px",
     display: "flex",
-    alignItems: "center",
     justifyContent: "space-between",
 
     backgroundColor: "rgba(0, 0, 0, 0.6)",
@@ -42,6 +40,12 @@ export const Product = styled("div", {
     transform: "translateY(110%)",
     opacity: "0",
     transition: "all 0.2s ease-in-out",
+
+    section: {
+      display: "flex",
+      flexDirection: "column",
+      gap: "1rem",
+    },
 
     strong: {
       fontSize: "$lg",
@@ -52,7 +56,25 @@ export const Product = styled("div", {
       fontSize: "$xl",
       fontWeight: "bold",
       color: "$green300",
-    }
+    },
+
+    button: {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      border: 0,
+      borderRadius: 6,
+      cursor: "pointer",
+  
+      width: "3.5rem",
+      height: "3.5rem",
+      backgroundColor: "$green500",
+
+      "&:hover": {
+        transition: "background-color 0.2s",
+        backgroundColor: "$green300",
+      }
+    },
 
   },
 
