@@ -116,3 +116,60 @@ export const FooterInformations = styled("footer", {
   width: "100%",
   paddingBottom: "4rem",
 })
+
+export const InformationsAboutBuyContainer = styled("div", {
+  marginBottom: "0.5",
+  width: "100%",
+  display: "flex",
+  justifyContent: "space-between",
+  paddingRight: "8rem",
+  color: "$gray100",
+
+  h2: {
+    fontSize: "1.125rem",
+    fontWeight: 700,
+  },
+
+  h3: {
+    fontSize: "1rem",
+    fontWeight: 400,
+  },
+
+  span: {
+    fontSize: "1.125rem",
+   
+    fontWeight: 400,
+  },
+
+  p: {
+    fontSize: "1.5rem",
+    fontWeight: 700,
+  },
+})
+
+
+export const FormButton = styled("form", {
+  width: "100%",
+  paddingRight: "8rem",
+  marginTop: "3.5rem",
+
+  button: {
+    width: "100%",
+    padding: "1.25rem 0",
+    display: "flex",
+    textAlign: "center",
+    justifyContent: "center",
+    color: "$gray100",
+    fontSize: "1.125rem",
+    fontWeight: 700,
+    backgroundColor: "$green500",
+    border: 0,
+    borderRadius: 8,
+    cursor: "pointer",
+
+    "&:hover": {
+      transition: "backgroundColor 0.2s",
+      backgroundColor: "$green300",
+    }
+  },
+})

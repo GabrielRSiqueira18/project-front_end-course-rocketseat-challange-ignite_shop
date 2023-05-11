@@ -15,6 +15,8 @@ import {
    ItemsBuyedsSingle, 
    ItemsBuyedsWrapper,
    FooterInformations,
+   InformationsAboutBuyContainer,
+   FormButton,
   } from '@/styles/pages/app'
 
 import Image from 'next/image'
@@ -59,9 +61,19 @@ export default function App({ Component, pageProps }: AppProps) {
                   </ItemsBuyedsSingle>
                 </ItemsBuyedsWrapper>
                 <FooterInformations>
-                  <h2>
-                    Teste
-                  </h2>
+                  <InformationsAboutBuyContainer>
+                    <h3>Quantidade</h3>
+                    <span>3 itens</span>
+                  </InformationsAboutBuyContainer>
+                  <InformationsAboutBuyContainer>
+                    <h2>Valor total</h2>
+                    <p>R$ 270,00</p>
+                  </InformationsAboutBuyContainer>
+                  <FormButton>
+                    <button>
+                      Finalizar compra
+                    </button>
+                  </FormButton>
                 </FooterInformations>
               </ContentContainer>
                 
