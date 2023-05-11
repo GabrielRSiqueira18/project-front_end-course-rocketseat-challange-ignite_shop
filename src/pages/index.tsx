@@ -63,6 +63,9 @@ export default function Home({ products }: HomeProps) {
           )
         })}
       </HomeContainer>
+
+      {/* <DebugCart /> */}
+
     </>
     
   )

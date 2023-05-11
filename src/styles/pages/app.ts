@@ -25,11 +25,34 @@ export const Header = styled("header", {
     border: 0,
     borderRadius: 6,
     cursor: "pointer",
-
+    position: "relative",
     width: "3rem",
     height: "3rem",
     backgroundColor: "$gray800",
+
+    "&:disabled": {
+      cursor: "default",
+      borderRadius: 0,
+    },
     
+    span: {
+      width: "1.5rem",
+      height: "1.5rem",
+      border: 0,
+      borderRadius: "50%",
+      backgroundColor: "$green500",
+      
+      position: "absolute",
+      top: "-5px",
+      right: "-10px",
+      color: "$white",
+
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      fontWeight: "700",
+      fontSize: "0.875rem",
+    },
   },
 })
 
@@ -101,13 +124,56 @@ export const ItemsBuyedsWrapper = styled("div", {
 
 export const ItemsBuyedsSingle = styled("div", {
   display: "grid",
-  gridTemplateColumns: "1fr 1fr",
-  gap: "1.25rem",
+  justifyContent: "left",
+  gridTemplateColumns: "1fr 2fr",
+  gap: "1.5rem",
+})
+
+export const ImageContainer = styled("div", {
+  width: "100%",
+  height: "100%",
+  background: "linear-gradient(180deg, #1ea483 0%, #7465d4 100%)",
+  border: 0,
+  borderRadius: 8,
+
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
 })
 
 export const InformationsAboutTshirtContainer = styled("div", {
   display: "flex",
   flexDirection: "column",
+
+  h3: {
+    fontWeight: "400",
+    fontSize: "1.125rem",
+    color: "$gray300",
+    width: "100%",
+    marginBottom: "0.5rem",
+  },
+
+  strong: {
+    fontWeight: "700",
+    fontSize: "1.125rem",
+    color: "$gray100",
+    marginBottom: "0.5rem",
+  },
+
+  button: {
+    background: "transparent",
+    border: 0,
+    color: "$green500",
+    fontSize: "1rem",
+    fontWeight: "700",
+    textAlign: "left",
+    marginBottom: "0.5rem",
+    cursor: "pointer",
+
+    "&:hover": {
+      color: "$green300",
+    },
+  }
 })
 
 export const FooterInformations = styled("footer", {
