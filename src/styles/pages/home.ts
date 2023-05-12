@@ -44,6 +44,10 @@ export const Product = styled("div", {
     opacity: "0",
     transition: "all 0.2s ease-in-out",
 
+    "@media screen and (max-width: 768px)": {
+      flexWrap: "wrap",
+    },
+
     section: {
       display: "flex",
       flexDirection: "column",
