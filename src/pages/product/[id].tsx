@@ -4,24 +4,14 @@ import { stripe } from "@/lib/stripe";
 import Stripe from "stripe";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import axios from "axios";
-import { useState } from "react";
 import Head from "next/head";
 import { useShoppingCart } from "use-shopping-cart";
-import { ItemsBuyeds } from "@/components/App";
-import { CartEntry } from "use-shopping-cart/core";
-
+import { CartEntry } from 'use-shopping-cart/core'
 interface ProductProps {
-  product: {
-    id: string
-    name: string
-    imageUrl: string
-    price: string
-    description: string
-    defaultPriceId: string
-  }
+  product: CartEntry
+
   res: string[]
-}
+} 
 
 /*
   Usar useRouter para mandar para outra página na aplicação
