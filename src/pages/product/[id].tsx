@@ -8,6 +8,8 @@ import axios from "axios";
 import { useState } from "react";
 import Head from "next/head";
 import { useShoppingCart } from "use-shopping-cart";
+import { ItemsBuyeds } from "@/components/App";
+import { CartEntry } from "use-shopping-cart/core";
 
 interface ProductProps {
   product: {
@@ -28,30 +30,8 @@ interface ProductProps {
 */
 
 export default function Product({ product }: ProductProps) {  
-  const [ isCreatingCheckoutSession, setIsCreatingCheckoutSession ] = useState(false)
-  
-
-
-  // async function handleBuyProduct() {
-  //   try {
-  //     setIsCreatingCheckoutSession(true)
-
-  //     const response = await axios.post("/api/checkout", {
-  //       priceId: product.defaultPriceId,
-  //     })
-
-  //     const { checkoutUrl } = response.data
-
-  //     window.location.href = checkoutUrl
-  //   } catch (err) {
-  //     //Datadog / Sentry
-  //     setIsCreatingCheckoutSession(false)
-  //     alert("Falha ao redirecionar ao checkout")
-  //   }
-  // }
-
   const { isFallback } = useRouter()
-  const { addItem, clearCart  } = useShoppingCart()
+  const { addItem } = useShoppingCart()
 
   
     
@@ -80,7 +60,7 @@ export default function Product({ product }: ProductProps) {
           <h1>{product.name}</h1>
           <span>{priceFormatted}</span>
           <p>{product.description}</p>
-          <button disabled={isCreatingCheckoutSession} onClick={() => addItem(product)}>Colocar na sacola</button>
+          <button onClick={() => addItem(product)}>Colocar na sacola</button>
         </ProductDetails>
       </ProductContainer> 
     </>

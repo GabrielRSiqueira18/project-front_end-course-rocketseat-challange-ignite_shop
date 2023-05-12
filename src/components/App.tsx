@@ -17,12 +17,14 @@ import {
   ItemsBuyedsWrapper,
   FooterInformations,
   InformationsAboutBuyContainer,
-  FormButton,
+  ButtonContainerToCheckout,
   ImageContainer,
  } from '@/styles/pages/app'
 import { CartEntry } from 'use-shopping-cart/core'
+import axios from 'axios';
+import { useState } from 'react';
 
-interface ItemsBuyeds {
+export interface ItemsBuyeds {
   defaultPriceId: string
   description: string
   formattedPrice: string
@@ -38,7 +40,9 @@ interface ItemsBuyeds {
 }
 
 export function AppComponent() {
-  const { cartDetails, removeItem } = useShoppingCart();
+  const { cartDetails, removeItem, clearCart } = useShoppingCart();
+  
+  const [ isCreatingCheckoutSession, setIsCreatingCheckoutSession ] = useState(false)
   
   let catDetailsArray: [string, CartEntry][]
   const itemsBuyedsList: ItemsBuyeds[] = []
@@ -58,6 +62,27 @@ export function AppComponent() {
     style: "currency",
     currency: "BRL",
   }).format(totalPriceItemsBuyeds)
+
+
+  async function handleBuyProduct() {
+    try {
+      setIsCreatingCheckoutSession(true)
+
+      const response = await axios.post("/api/checkout", {
+        products: itemsBuyedsList
+      })
+
+      const { checkoutUrl } = response.data
+
+      window.location.href = checkoutUrl
+      clearCart()
+    } catch (err) {
+      //Datadog / Sentry
+      setIsCreatingCheckoutSession(false)
+      alert("Falha ao redirecionar ao checkout")
+    }
+  }
+
 
   return (
     <Dialog.Root>
@@ -115,11 +140,11 @@ export function AppComponent() {
                   <h2>Valor total</h2>
                   <p>{totalPriceItemsBuyedsFormatted}</p>
                 </InformationsAboutBuyContainer>
-                <FormButton>
-                  <button>
+                <ButtonContainerToCheckout>
+                  <button onClick={handleBuyProduct}>
                     Finalizar compra
                   </button>
-                </FormButton>
+                </ButtonContainerToCheckout>
               </FooterInformations>
             </ContentContainer>
               
@@ -127,6 +152,7 @@ export function AppComponent() {
           </DialogContentCustom>
         </Dialog.Portal>
       </Header>
+      
     </Dialog.Root>
   )
 }

@@ -36,19 +36,30 @@ export const SuccessContainer = styled("main", {
   },
 })
 
+export const ImagesWrapper = styled("div", {
+  display: "flex",
+})
+
 export const ImageContainer = styled("div", {
   width: "100%",
-  maxWidth: "130px",
-  height: "145px",
+  maxWidth: "160px",
+  height: "160px",
   background: "linear-gradient(180deg, #1ea483 0%, #7465d4 100%)",
-  borderRadius: "8px",
+  borderRadius: "50%",
   padding: "0.25rem",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
   marginTop: "4rem",
+  marginBottom: "4rem",
+  position: "relative", 
+
+  "&:not(:first-child)": {
+    marginLeft: "-4rem", 
+  },
 
   img: {
     objectFit: "cover",
   },
+
 })

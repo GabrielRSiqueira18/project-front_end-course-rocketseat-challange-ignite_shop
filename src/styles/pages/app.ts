@@ -18,6 +18,10 @@ export const Header = styled("header", {
   display: "flex",
   justifyContent: "space-between",  
 
+  "@media screen and (max-width: 768px)": {
+    padding: "2rem 2rem",
+  },
+
   button: {
     display: "flex",
     justifyContent: "center",
@@ -214,7 +218,7 @@ export const InformationsAboutBuyContainer = styled("div", {
 })
 
 
-export const FormButton = styled("form", {
+export const ButtonContainerToCheckout = styled("div", {
   width: "100%",
   paddingRight: "8rem",
   marginTop: "3.5rem",
