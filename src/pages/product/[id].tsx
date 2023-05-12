@@ -23,11 +23,6 @@ export default function Product({ product }: ProductProps) {
   const { isFallback } = useRouter()
   const { addItem } = useShoppingCart()
 
-  
-    
-    
-
-
   if(isFallback) {
     return <div>Loading...</div>
   }
