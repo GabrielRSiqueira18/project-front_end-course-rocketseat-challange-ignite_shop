@@ -127,7 +127,6 @@ export function AppComponent() {
           </DialogContentCustom>
         </Dialog.Portal>
       </Header>
-      
     </Dialog.Root>
   )
 }
