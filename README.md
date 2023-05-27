@@ -1,38 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Portuguese
+# Ignite Shop
+## Site criado usando React/NextJs
 
-## Getting Started
+[![Versão](https://img.shields.io/badge/Vers%C3%A3o-1.0-blue)](https://github.com/GabrielRSiqueira18/coffee-delivery-desafio-2)
+[![Conclusão](https://img.shields.io/badge/Conclus%C3%A3o-100%25-green)](https://github.com/GabrielRSiqueira18/coffee-delivery-desafio-2)
 
-First, run the development server:
+> Projeto criado para realizar o desafio da Rocketseat, desafio esse que consiste em desenvolver uma aplicação de vendas de camisa usando a biblioteca stripe.
+## Foram usados as bibliotecas: 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+`axios: Para realizar requisões http com mais facilidade` 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+`stitches: Para criar componentes estilizados no nextjs, possibilitando também ao desabilitar javascript manter a estilização`
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+`keen-slider: Para criar slide dos items para compra`
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+`stripe: Para criar o e-commerce tendo já disponibilizado a forma de pagamento e uma forma de gerenciar os pagamentos`
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+`use-shopping-cart: Para criar o carrinho de compra do e-commerce e controlar os items comprados`
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+`Radix-UI/Chakra-UI: Para usar componentes já estilizados e com acessibilidades já feitas e conseguindo manipular de acordo com a nescessidade, como por exemplo estilizar da forma que quiser`
 
-## Learn More
+## Estatisticas das principais linguagens usadas no projeto
+![Linguagens](https://img.shields.io/github/languages/top/GabrielRSiqueira18/coffee-delivery-desafio-2.svg)
 
-To learn more about Next.js, take a look at the following resources:
+## English
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Site created using React/NextJs
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+[![Versão](https://img.shields.io/badge/Vers%C3%A3o-1.0-blue)](https://github.com/GabrielRSiqueira18/coffee-delivery-desafio-2)
+[![Conclusão](https://img.shields.io/badge/Conclus%C3%A3o-100%25-green)](https://github.com/GabrielRSiqueira18/coffee-delivery-desafio-2)
 
-## Deploy on Vercel
+> Projct created for accomplish the challange by Rocketseat, this challange consisting in developing one aplication to sell t-shirts using stripe lib.
+## Libraries were used: 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`axios: For accomplish requests http more easily` 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+`stitches: For create styled componentes in nextjs, to possibilite to also disable javascript to mantain stylization`
+
+`keen-slider: For create slide of items to builds`
+
+`stripe: For create e-commerce having already available the payment form and one form to to manage payments`
+
+`use-shopping-cart: For create a kart purchase of e-commerce and control items buyeds`
+
+`Radix-UI/Chakra-UI: For use styled-components and have accessibility already made and manipulate accordingly with my necessity, one example is the stylization, i can style like i waint`
+
+## Statistics about most languages useds in this project
+![Linguagens](https://img.shields.io/github/languages/top/GabrielRSiqueira18/coffee-delivery-desafio-2.svg)
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=GabrielRSiqueira18&hide_progress=true&theme=dark&layout=compact&langs_count=6)](https://github.com/GabrielRSiqueira18/coffee-delivery-desafio-2)
+
+
+# Generals informations my Github
+[![Estatísticas do GitHub](https://github-readme-stats.vercel.app/api?username=GabrielRSiqueira18&theme=blue-green)](https://github.com/GabrielRSiqueira18/github-readme-stats)
+
