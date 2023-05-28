@@ -46,9 +46,8 @@
 `Radix-UI/Chakra-UI: For use styled-components and have accessibility already made and manipulate accordingly with my necessity, one example is the stylization, i can style like i waint`
 
 ## Statistics about most languages useds in this project
-![Linguagens](https://img.shields.io/github/languages/top/GabrielRSiqueira18/coffee-delivery-desafio-2.svg)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=GabrielRSiqueira18&hide_progress=true&theme=dark&layout=compact&langs_count=6)](https://github.com/GabrielRSiqueira18/coffee-delivery-desafio-2)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=GabrieLRSiqueira18&theme=tokyonight)
 
 
 # Generals informations my Github
